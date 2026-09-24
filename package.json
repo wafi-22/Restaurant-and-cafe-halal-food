@@ -1,0 +1,28 @@
+{
+  "name": "halal-dining-engine",
+  "version": "1.0.0",
+  "description": "Production-Grade AI-Powered Halal Dining & Certificate Verification Engine",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build",
+    "seed": "node server/db/seed.js",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "halal",
+    "dining",
+    "gemini",
+    "vision-ai",
+    "certificate-verification",
+    "geospatial"
+  ],
+  "author": "Halal Dining AI Systems Architect",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
